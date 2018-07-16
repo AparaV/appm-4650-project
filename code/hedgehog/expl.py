@@ -66,7 +66,7 @@ def newton_raphson(f, fp, x0, max_iter=None, tol=1e-4, test="x_ratio", isVerbose
 		else:
 			x1 = float("-inf")
 		if isVerbose:
-			print("Iter: {:3}\t Best Guess: {:.6f}".format(i, x1))
+			print("Iter: {:3}\t Best Guess: {:.7f}".format(i, x1))
 
 		# check for convergence or divergence
 		if has_converged(x0, x1, tol=tol, test=test):
